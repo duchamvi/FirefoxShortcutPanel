@@ -6,25 +6,32 @@ using System.Threading.Tasks;
 
 namespace FirefoxShortcutPanel
 {
+    public class Shortcut
+    {
+        public string Title { get; set; }
+        public string Link { get; set; }
+        public int Index { get; set; }
+    }
+    
     class ShortcutsManager
     {
 
-        int shortcutsAmount = 10;
-        List<string> shortcutList;
+        public int shortcutsAmount = 10;
+        public List<Shortcut> elements;
 
 
         public ShortcutsManager()
         {
-            shortcutList = new List<string>();
+            elements = new List<Shortcut>();
             for (int i = 0; i < shortcutsAmount; i++)
             {
-                shortcutList.Add($"-p {i}");
+                Shortcut newShortcut = new Shortcut();
+                newShortcut.Title = $"Shortcut {i}";
+                newShortcut.Link = $"-p {i}";
+                newShortcut.Index = i;
+                elements.Add(newShortcut);
             }
         }
 
-        public string getShortcut(int index)
-        {
-            return shortcutList[index];
-        }
     }
 }

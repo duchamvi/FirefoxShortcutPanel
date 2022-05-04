@@ -14,21 +14,34 @@ namespace FirefoxShortcutPanel
     {
 
         ShortcutsManager shortcutsManager;
+        List<Button> shortcutButtonsList;
 
         public Form1()
         {
+            //initialize with designer.cs
             InitializeComponent();
+
+            // initialize shortcuts 
             shortcutsManager = new ShortcutsManager();
+            shortcutButtonsList = new List<Button>();
+            shortcutButtonsList.Add(shortcutButton1);
+            shortcutButtonsList.Add(shortcutButton2);
+            shortcutButtonsList.Add(shortcutButton3);
+            shortcutButtonsList.Add(shortcutButton4);
+            shortcutButtonsList.Add(shortcutButton5);
+            foreach (var button in shortcutButtonsList)
+            {
+                button.Click += new System.EventHandler(shortcutButton_Click);
+            }
             updateShortcutButtons();
         }
 
         private void updateShortcutButtons()
         {
-            shortcutButton1.Text = shortcutsManager.getShortcut(0);
-            shortcutButton2.Text = shortcutsManager.getShortcut(1);
-            shortcutButton3.Text = shortcutsManager.getShortcut(2);
-            shortcutButton4.Text = shortcutsManager.getShortcut(3);
-            shortcutButton5.Text = shortcutsManager.getShortcut(4);
+            for (int i = 0; i < shortcutButtonsList.Count; i++)
+            {
+                shortcutButtonsList[i].Text = shortcutsManager.elements[i].Title;
+            }
         }
 
         //go to the custom link
@@ -49,30 +62,17 @@ namespace FirefoxShortcutPanel
                 this.Close();
         }
 
-        private void shortcutButton1_Click(object sender, EventArgs e)
+        private void shortcutButton_Click(object sender, EventArgs e)
         {
-            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(0));
+            for (int i = 0; i < shortcutButtonsList.Count; i++)
+            {
+                if (sender == shortcutButtonsList[i])
+                {
+                    FirefoxCaller.firefoxCall(shortcutsManager.elements[i].Link);
+                }
+            }
         }
-
-        private void shortcutButton2_Click(object sender, EventArgs e)
-        {
-            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(1));
-        }
-
-        private void shortcutButton3_Click(object sender, EventArgs e)
-        {
-            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(2));
-        }
-
-        private void shortcutButton4_Click(object sender, EventArgs e)
-        {
-            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(3));
-        }
-
-        private void shortcutButton5_Click(object sender, EventArgs e)
-        {
-            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(4));
-        }
+        
     }
 
 }

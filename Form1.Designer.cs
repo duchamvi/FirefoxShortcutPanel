@@ -163,7 +163,6 @@ namespace FirefoxShortcutPanel
             this.shortcutButton5.TabIndex = 12;
             this.shortcutButton5.Text = "???";
             this.shortcutButton5.UseVisualStyleBackColor = true;
-            this.shortcutButton5.Click += new System.EventHandler(this.shortcutButton5_Click);
             // 
             // shortcutButtonModify4
             // 
@@ -190,7 +189,6 @@ namespace FirefoxShortcutPanel
             this.shortcutButton4.TabIndex = 9;
             this.shortcutButton4.Text = "???";
             this.shortcutButton4.UseVisualStyleBackColor = true;
-            this.shortcutButton4.Click += new System.EventHandler(this.shortcutButton4_Click);
             // 
             // shortcutButtonModify3
             // 
@@ -217,7 +215,6 @@ namespace FirefoxShortcutPanel
             this.shortcutButton3.TabIndex = 6;
             this.shortcutButton3.Text = "???";
             this.shortcutButton3.UseVisualStyleBackColor = true;
-            this.shortcutButton3.Click += new System.EventHandler(this.shortcutButton3_Click);
             // 
             // shortcutButtonModify2
             // 
@@ -244,7 +241,6 @@ namespace FirefoxShortcutPanel
             this.shortcutButton2.TabIndex = 3;
             this.shortcutButton2.Text = "???";
             this.shortcutButton2.UseVisualStyleBackColor = true;
-            this.shortcutButton2.Click += new System.EventHandler(this.shortcutButton2_Click);
             // 
             // shortcutButtonModify1
             // 
@@ -271,7 +267,6 @@ namespace FirefoxShortcutPanel
             this.shortcutButton1.TabIndex = 0;
             this.shortcutButton1.Text = "???";
             this.shortcutButton1.UseVisualStyleBackColor = true;
-            this.shortcutButton1.Click += new System.EventHandler(this.shortcutButton1_Click);
             // 
             // Form1
             // 
