@@ -12,9 +12,23 @@ namespace FirefoxShortcutPanel
 {
     public partial class Form1 : Form
     {
+
+        ShortcutsManager shortcutsManager;
+
         public Form1()
         {
             InitializeComponent();
+            shortcutsManager = new ShortcutsManager();
+            updateShortcutButtons();
+        }
+
+        private void updateShortcutButtons()
+        {
+            shortcutButton1.Text = shortcutsManager.getShortcut(0);
+            shortcutButton2.Text = shortcutsManager.getShortcut(1);
+            shortcutButton3.Text = shortcutsManager.getShortcut(2);
+            shortcutButton4.Text = shortcutsManager.getShortcut(3);
+            shortcutButton5.Text = shortcutsManager.getShortcut(4);
         }
 
         //go to the custom link
@@ -35,6 +49,30 @@ namespace FirefoxShortcutPanel
                 this.Close();
         }
 
+        private void shortcutButton1_Click(object sender, EventArgs e)
+        {
+            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(0));
+        }
+
+        private void shortcutButton2_Click(object sender, EventArgs e)
+        {
+            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(1));
+        }
+
+        private void shortcutButton3_Click(object sender, EventArgs e)
+        {
+            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(2));
+        }
+
+        private void shortcutButton4_Click(object sender, EventArgs e)
+        {
+            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(3));
+        }
+
+        private void shortcutButton5_Click(object sender, EventArgs e)
+        {
+            FirefoxCaller.firefoxCall(shortcutsManager.getShortcut(4));
+        }
     }
 
 }

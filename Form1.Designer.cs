@@ -36,16 +36,16 @@ namespace FirefoxShortcutPanel
             this.customLinkTextBox = new System.Windows.Forms.TextBox();
             this.shortcutsTab = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.shortcutButtonModify5 = new System.Windows.Forms.Button();
+            this.shortcutButton5 = new System.Windows.Forms.Button();
+            this.shortcutButtonModify4 = new System.Windows.Forms.Button();
+            this.shortcutButton4 = new System.Windows.Forms.Button();
+            this.shortcutButtonModify3 = new System.Windows.Forms.Button();
+            this.shortcutButton3 = new System.Windows.Forms.Button();
+            this.shortcutButtonModify2 = new System.Windows.Forms.Button();
+            this.shortcutButton2 = new System.Windows.Forms.Button();
+            this.shortcutButtonModify1 = new System.Windows.Forms.Button();
+            this.shortcutButton1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.customLinkTab.SuspendLayout();
             this.shortcutsTab.SuspendLayout();
@@ -116,16 +116,16 @@ namespace FirefoxShortcutPanel
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.button15, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button13, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button12, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button10, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButtonModify5, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButton5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButtonModify4, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButton4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButtonModify3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButton3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButtonModify2, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButton2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButtonModify1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.shortcutButton1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -138,135 +138,140 @@ namespace FirefoxShortcutPanel
             this.tableLayoutPanel1.Size = new System.Drawing.Size(740, 230);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button15
+            // shortcutButtonModify5
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButtonModify5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button15.Location = new System.Drawing.Point(599, 187);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(138, 40);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "Modify";
-            this.button15.UseVisualStyleBackColor = true;
+            this.shortcutButtonModify5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButtonModify5.Location = new System.Drawing.Point(599, 187);
+            this.shortcutButtonModify5.Name = "shortcutButtonModify5";
+            this.shortcutButtonModify5.Size = new System.Drawing.Size(138, 40);
+            this.shortcutButtonModify5.TabIndex = 14;
+            this.shortcutButtonModify5.Text = "Modify";
+            this.shortcutButtonModify5.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // shortcutButton5
             // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button13.Location = new System.Drawing.Point(3, 187);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(570, 40);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "???";
-            this.button13.UseVisualStyleBackColor = true;
+            this.shortcutButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButton5.Location = new System.Drawing.Point(3, 187);
+            this.shortcutButton5.Name = "shortcutButton5";
+            this.shortcutButton5.Size = new System.Drawing.Size(570, 40);
+            this.shortcutButton5.TabIndex = 12;
+            this.shortcutButton5.Text = "???";
+            this.shortcutButton5.UseVisualStyleBackColor = true;
+            this.shortcutButton5.Click += new System.EventHandler(this.shortcutButton5_Click);
             // 
-            // button12
+            // shortcutButtonModify4
             // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButtonModify4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button12.Location = new System.Drawing.Point(599, 141);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(138, 40);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "Modify";
-            this.button12.UseVisualStyleBackColor = true;
+            this.shortcutButtonModify4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButtonModify4.Location = new System.Drawing.Point(599, 141);
+            this.shortcutButtonModify4.Name = "shortcutButtonModify4";
+            this.shortcutButtonModify4.Size = new System.Drawing.Size(138, 40);
+            this.shortcutButtonModify4.TabIndex = 11;
+            this.shortcutButtonModify4.Text = "Modify";
+            this.shortcutButtonModify4.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // shortcutButton4
             // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button10.Location = new System.Drawing.Point(3, 141);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(570, 40);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "???";
-            this.button10.UseVisualStyleBackColor = true;
+            this.shortcutButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButton4.Location = new System.Drawing.Point(3, 141);
+            this.shortcutButton4.Name = "shortcutButton4";
+            this.shortcutButton4.Size = new System.Drawing.Size(570, 40);
+            this.shortcutButton4.TabIndex = 9;
+            this.shortcutButton4.Text = "???";
+            this.shortcutButton4.UseVisualStyleBackColor = true;
+            this.shortcutButton4.Click += new System.EventHandler(this.shortcutButton4_Click);
             // 
-            // button9
+            // shortcutButtonModify3
             // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButtonModify3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button9.Location = new System.Drawing.Point(599, 95);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(138, 40);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Modify";
-            this.button9.UseVisualStyleBackColor = true;
+            this.shortcutButtonModify3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButtonModify3.Location = new System.Drawing.Point(599, 95);
+            this.shortcutButtonModify3.Name = "shortcutButtonModify3";
+            this.shortcutButtonModify3.Size = new System.Drawing.Size(138, 40);
+            this.shortcutButtonModify3.TabIndex = 8;
+            this.shortcutButtonModify3.Text = "Modify";
+            this.shortcutButtonModify3.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // shortcutButton3
             // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button7.Location = new System.Drawing.Point(3, 95);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(570, 40);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "???";
-            this.button7.UseVisualStyleBackColor = true;
+            this.shortcutButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButton3.Location = new System.Drawing.Point(3, 95);
+            this.shortcutButton3.Name = "shortcutButton3";
+            this.shortcutButton3.Size = new System.Drawing.Size(570, 40);
+            this.shortcutButton3.TabIndex = 6;
+            this.shortcutButton3.Text = "???";
+            this.shortcutButton3.UseVisualStyleBackColor = true;
+            this.shortcutButton3.Click += new System.EventHandler(this.shortcutButton3_Click);
             // 
-            // button6
+            // shortcutButtonModify2
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButtonModify2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button6.Location = new System.Drawing.Point(599, 49);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(138, 40);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Modify";
-            this.button6.UseVisualStyleBackColor = true;
+            this.shortcutButtonModify2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButtonModify2.Location = new System.Drawing.Point(599, 49);
+            this.shortcutButtonModify2.Name = "shortcutButtonModify2";
+            this.shortcutButtonModify2.Size = new System.Drawing.Size(138, 40);
+            this.shortcutButtonModify2.TabIndex = 5;
+            this.shortcutButtonModify2.Text = "Modify";
+            this.shortcutButtonModify2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // shortcutButton2
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.Location = new System.Drawing.Point(3, 49);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(570, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "???";
-            this.button4.UseVisualStyleBackColor = true;
+            this.shortcutButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButton2.Location = new System.Drawing.Point(3, 49);
+            this.shortcutButton2.Name = "shortcutButton2";
+            this.shortcutButton2.Size = new System.Drawing.Size(570, 40);
+            this.shortcutButton2.TabIndex = 3;
+            this.shortcutButton2.Text = "???";
+            this.shortcutButton2.UseVisualStyleBackColor = true;
+            this.shortcutButton2.Click += new System.EventHandler(this.shortcutButton2_Click);
             // 
-            // button3
+            // shortcutButtonModify1
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButtonModify1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.Location = new System.Drawing.Point(599, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(138, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Modify";
-            this.button3.UseVisualStyleBackColor = true;
+            this.shortcutButtonModify1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButtonModify1.Location = new System.Drawing.Point(599, 3);
+            this.shortcutButtonModify1.Name = "shortcutButtonModify1";
+            this.shortcutButtonModify1.Size = new System.Drawing.Size(138, 40);
+            this.shortcutButtonModify1.TabIndex = 2;
+            this.shortcutButtonModify1.Text = "Modify";
+            this.shortcutButtonModify1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // shortcutButton1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.shortcutButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(570, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "???";
-            this.button1.UseVisualStyleBackColor = true;
+            this.shortcutButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.shortcutButton1.Location = new System.Drawing.Point(3, 3);
+            this.shortcutButton1.Name = "shortcutButton1";
+            this.shortcutButton1.Size = new System.Drawing.Size(570, 40);
+            this.shortcutButton1.TabIndex = 0;
+            this.shortcutButton1.Text = "???";
+            this.shortcutButton1.UseVisualStyleBackColor = true;
+            this.shortcutButton1.Click += new System.EventHandler(this.shortcutButton1_Click);
             // 
             // Form1
             // 
@@ -299,16 +304,16 @@ namespace FirefoxShortcutPanel
         private System.Windows.Forms.TextBox customLinkTextBox;
         private System.Windows.Forms.Button goCustomLinkButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button shortcutButton1;
+        private System.Windows.Forms.Button shortcutButtonModify5;
+        private System.Windows.Forms.Button shortcutButton5;
+        private System.Windows.Forms.Button shortcutButtonModify4;
+        private System.Windows.Forms.Button shortcutButton4;
+        private System.Windows.Forms.Button shortcutButtonModify3;
+        private System.Windows.Forms.Button shortcutButton3;
+        private System.Windows.Forms.Button shortcutButtonModify2;
+        private System.Windows.Forms.Button shortcutButton2;
+        private System.Windows.Forms.Button shortcutButtonModify1;
     }
 }
 
