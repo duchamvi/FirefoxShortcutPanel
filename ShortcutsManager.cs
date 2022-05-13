@@ -12,10 +12,10 @@ namespace FirefoxShortcutPanel
         public string Link { get; set; }
         public int Index { get; set; }
     }
-    
+
+    // The shortcut manager contains the list of shortcuts and the methods to update them
     class ShortcutsManager
     {
-
         public int shortcutsAmount = 10;
         public List<Shortcut> elements;
 
@@ -27,7 +27,7 @@ namespace FirefoxShortcutPanel
             {
                 Shortcut newShortcut = new Shortcut();
                 newShortcut.Title = $"Shortcut {i}";
-                newShortcut.Link = $"-p {i}";
+                newShortcut.Link = $"https://www.google.com/search?client=firefox-b-d&q={i}";
                 newShortcut.Index = i;
                 elements.Add(newShortcut);
             }

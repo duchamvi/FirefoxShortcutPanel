@@ -29,13 +29,15 @@ namespace FirefoxShortcutPanel
             shortcutButtonsList.Add(shortcutButton3);
             shortcutButtonsList.Add(shortcutButton4);
             shortcutButtonsList.Add(shortcutButton5);
-            foreach (var button in shortcutButtonsList)
+            for (int i = 0; i < shortcutButtonsList.Count; i++)
             {
-                button.Click += new System.EventHandler(shortcutButton_Click);
+                shortcutButtonsList[i].Tag = i; // This tag helps identifying the buttons, I use it as int
+                shortcutButtonsList[i].Click += new System.EventHandler(shortcutButton_Click); 
             }
             updateShortcutButtons();
         }
 
+        //updates the visual aspect of the shortcutButtons
         private void updateShortcutButtons()
         {
             for (int i = 0; i < shortcutButtonsList.Count; i++)
@@ -62,15 +64,11 @@ namespace FirefoxShortcutPanel
                 this.Close();
         }
 
+        //go to the shortcut link
         private void shortcutButton_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < shortcutButtonsList.Count; i++)
-            {
-                if (sender == shortcutButtonsList[i])
-                {
-                    FirefoxCaller.firefoxCall(shortcutsManager.elements[i].Link);
-                }
-            }
+            Button clickedButton = (Button)sender;
+            FirefoxCaller.firefoxCall(shortcutsManager.elements[(int) clickedButton.Tag].Link);   //the correct shortcut is identified with the tag        
         }
         
     }
