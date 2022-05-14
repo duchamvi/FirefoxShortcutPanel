@@ -96,7 +96,7 @@ namespace FirefoxShortcutPanel
                 f.Text = $"Modify shortcut {clickedIndex}";
                 f.ShowDialog();
             }
-            updateShortcutButtons();
+            updateShortcutButtons();    
         }
 
     }
