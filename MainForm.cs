@@ -91,6 +91,12 @@ namespace FirefoxShortcutPanel
         {
             Button clickedButton = (Button)sender;
             int clickedIndex = (int)clickedButton.Tag; //the correct button is identified with the tag
+            using (InputForm f = new InputForm(shortcutsManager.elements[clickedIndex]))
+            {
+                f.Text = $"Modify shortcut {clickedIndex}";
+                f.ShowDialog();
+            }
+            updateShortcutButtons();
         }
 
     }

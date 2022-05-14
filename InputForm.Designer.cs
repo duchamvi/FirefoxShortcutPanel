@@ -62,6 +62,7 @@ namespace FirefoxShortcutPanel
             this.inputTextBox.Name = "inputTextBox";
             this.inputTextBox.Size = new System.Drawing.Size(664, 23);
             this.inputTextBox.TabIndex = 1;
+            this.inputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enter_KeyDown);
             // 
             // tableLayoutPanel2
             // 
@@ -129,6 +130,7 @@ namespace FirefoxShortcutPanel
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.escape_KeyDown);
 
         }
 
