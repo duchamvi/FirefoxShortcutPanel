@@ -1,7 +1,7 @@
 ﻿
 namespace FirefoxShortcutPanel
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace FirefoxShortcutPanel
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.customLinkTab = new System.Windows.Forms.TabPage();
             this.goCustomLinkButton = new System.Windows.Forms.Button();
@@ -268,7 +268,7 @@ namespace FirefoxShortcutPanel
             this.shortcutButton1.Text = "???";
             this.shortcutButton1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -279,7 +279,7 @@ namespace FirefoxShortcutPanel
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Firefox Command Panel";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.escape_KeyDown);
             this.tabControl1.ResumeLayout(false);

@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace FirefoxShortcutPanel
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
 
         ShortcutsManager shortcutsManager;
         List<Button> shortcutButtonsList;
 
-        public Form1()
+        public MainForm()
         {
             //initialize with designer.cs
             InitializeComponent();
