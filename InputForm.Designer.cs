@@ -102,6 +102,7 @@ namespace FirefoxShortcutPanel
             this.validateButton.TabIndex = 1;
             this.validateButton.Text = "Validate";
             this.validateButton.UseVisualStyleBackColor = true;
+            this.validateButton.Click += new System.EventHandler(this.validateButton_Click);
             // 
             // label1
             // 

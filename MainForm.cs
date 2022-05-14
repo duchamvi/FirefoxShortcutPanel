@@ -15,13 +15,14 @@ namespace FirefoxShortcutPanel
 
         ShortcutsManager shortcutsManager;
         List<Button> shortcutButtonsList;
+        List<Button> modifyButtonsList;
 
         public MainForm()
         {
             //initialize with designer.cs
             InitializeComponent();
 
-            // initialize shortcuts 
+            //initialize shortcuts 
             shortcutsManager = new ShortcutsManager();
             shortcutButtonsList = new List<Button>();
             shortcutButtonsList.Add(shortcutButton1);
@@ -35,6 +36,19 @@ namespace FirefoxShortcutPanel
                 shortcutButtonsList[i].Click += new System.EventHandler(shortcutButton_Click); 
             }
             updateShortcutButtons();
+
+            //initialize shortcut modifier buttons
+            modifyButtonsList = new List<Button>();
+            modifyButtonsList.Add(shortcutButtonModify1);
+            modifyButtonsList.Add(shortcutButtonModify2);
+            modifyButtonsList.Add(shortcutButtonModify3);
+            modifyButtonsList.Add(shortcutButtonModify4);
+            modifyButtonsList.Add(shortcutButtonModify5);
+            for (int i = 0; i < modifyButtonsList.Count; i++)
+            {
+                modifyButtonsList[i].Tag = i; // This tag helps identifying the buttons, I use it as int
+                modifyButtonsList[i].Click += new System.EventHandler(modifyButton_Click);
+            }
         }
 
         //updates the visual aspect of the shortcutButtons
@@ -68,9 +82,17 @@ namespace FirefoxShortcutPanel
         private void shortcutButton_Click(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
-            FirefoxCaller.firefoxCall(shortcutsManager.elements[(int) clickedButton.Tag].Link);   //the correct shortcut is identified with the tag        
+            int clickedIndex = (int)clickedButton.Tag; //the correct button is identified with the tag   
+            FirefoxCaller.firefoxCall(shortcutsManager.elements[clickedIndex].Link);        
         }
-        
+
+        //display the Input Form
+        private void modifyButton_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = (Button)sender;
+            int clickedIndex = (int)clickedButton.Tag; //the correct button is identified with the tag
+        }
+
     }
 
 }

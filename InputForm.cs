@@ -19,8 +19,12 @@ namespace FirefoxShortcutPanel
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
+        private void validateButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
